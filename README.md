@@ -77,7 +77,7 @@ npm install express
 
 ```bash
 # Create NGINX server block configuration
-sudo nano /etc/nginx/sites-available/app
+sudo nano /etc/nginx/sites-available/default
 ```
 
 Add the following configuration:
@@ -99,7 +99,7 @@ server {
 
 ```bash
 # Create symlink to enable site
-sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 
 # Test NGINX configuration
 sudo nginx -t
@@ -122,7 +122,7 @@ nano index.html
 <script src="https://cdn.tailwindcss.com"></script>
 
 # Copy static files to NGINX serve directory
-sudo cp -r * /var/www/html/
+sudo cp -r * /var/www/public/
 ```
 
 ### 6. 🔒 Security Group Configuration
