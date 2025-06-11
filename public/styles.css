@@ -1,0 +1,51 @@
+body {
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #7c3aed;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.project-card {
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateX(8px);
+}
