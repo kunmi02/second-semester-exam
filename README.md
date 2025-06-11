@@ -32,8 +32,8 @@ This project provisions an Ubuntu EC2 instance, installs NGINX, and deploys a dy
   - SSH (port 22): `0.0.0.0/0` 
 - SSH into instance:
   ```bash
-  chmod 400 second-semester.pem
-  ssh -i second-semester.pem ubuntu@18.201.100.201
+  chmod 400 aladin.pem
+  ssh -i aladin.pem ubuntu@18.201.100.201
   ```
 
 ### 2. 🚀 Install and Configure NGINX
