@@ -63,8 +63,8 @@ node --version
 npm --version
 
 # Create project directory
-mkdir ~/app
-cd ~/app
+mkdir ~/public
+cd ~/public
 
 # Initialize Node.js project
 npm init -y
