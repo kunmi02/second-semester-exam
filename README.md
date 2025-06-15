@@ -71,6 +71,23 @@ npm init -y
 
 # Install dependencies
 npm install express
+
+# Install PM2 globally to keep Node.js application running
+sudo npm install -g pm2
+
+# Start your Node.js application with PM2
+pm2 start app.js
+
+# Configure PM2 to start on system boot
+pm2 startup
+sudo env PATH=$PATH:/usr/bin pm2 startup systemd -u ubuntu --hp /home/ubuntu
+pm2 save
+
+# Verify PM2 process is running
+pm2 list
+
+# Monitor application logs
+pm2 logs
 ```
 
 ### 4. 🔄 Configure NGINX as Reverse Proxy
